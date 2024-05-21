@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Video Downloader</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="https://i.ibb.co/RjftJLZ/Y-Loader-min.png">
+  <meta property="og:image" content="https://i.ibb.co/w67DKvv/Y-Loader-Full-Logo-min.png">
+  <style>
+    #loader {
+      display: none;
+      border: 8px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 8px solid #ed218d;
+      width: 40px;
+      height: 40px;
+      animation: spin 2s linear infinite;
+      margin: 10px auto; /* Center the loader */
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .input-group {
+      display: flex;
+      align-items: center;
+      gap: 10px; /* Add gap between buttons */
+    }
+
+    #status-text {
+      text-align: center;
+      margin-top: 10px;
+      color: #ed218d;
+      font-weight: bold;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .disabled {
+      pointer-events: none;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="/" id="logo-link"><img src="https://i.ibb.co/2hhZ9t8/Y-Loader-Full-Logo-White-min.png" alt="Logo" class="logo"></a>
+  </header>
+  <div class="container">
+    <h1><i class="fab fa-youtube"></i> YouTube Video Downloader</h1>
+    <form id="fetch-form">
+      <div class="input-group">
+        <input type="url" id="url" placeholder="Enter YouTube URL" required>
+        <button type="submit"><i class="fas fa-search"></i> Fetch</button>
+        <button type="button" id="paste-button"><i class="fas fa-paste"></i> Paste</button>
+      </div>
+      <div id="loader"></div> <!-- Loader placed below the input group -->
+      <div id="status-text"></div>
+    </form>
+    <div class="scanned-by">
+      <span>Scanned by</span>
+      <img src="https://i.ibb.co/LJrZDZt/norton.png" alt="Norton Safe Web">
+      <span>Norton<sup>TM</sup> Safe Web</span>
+    </div>
+    <div id="video-info" class="hidden">
+      <img id="thumbnail" src="" alt="Thumbnail">
+      <h2 id="title"></h2>
+    </div>
+    <div id="format-options" class="hidden">
+      <h2>Select Format and Quality</h2>
+      <form id="download-form">
+        <select id="format-select" required></select>
+        <div class="button-container">
+          <button type="submit" id="download-button"><i class="fas fa-download"></i> Download</button>
+        </div>
+      </form>
+    </div>
+    <p id="error-message"></p>
+  </div>
+  <div class="info-section">
+    <p>
+      Discover the pinnacle answer for effortless and effective downloading of videos and music from the web: our Y-Loader video downloader.
+      This intuitive, no-cost utility streamlines the task of acquiring your preferred media content with just one simple click, guaranteeing
+      a smooth and hassle-free journey!
+    </p>
+    <h3>Supported Platforms:</h3>
+    <div class="platform-logos">
+      <img src="https://i.ibb.co/f8Gz5CM/windows-min-white.png" alt="Windows">
+      <img src="https://i.ibb.co/GtPFJQs/apple-min-white.png" alt="Apple">
+      <img src="https://i.ibb.co/WgdqV4n/android-min-white.png" alt="Android">
+      <img src="https://i.ibb.co/R0TNTDM/linux-min-white.png" alt="Linux">
+    </div>
+  </div>
+  <div class="guide-section">
+    <h3>Guide: Saving MP4 Videos in HD – Top Methods Explained</h3>
+    <p>Looking to preserve the pristine HD quality of your MP4 videos? Discover proven techniques to make it happen:</p>
+    <ol>
+      <li>Visit the desired video, capture its URL, and insert it into the designated field at the page’s pinnacle. Once completed, hit "Enter" or select the "Download" button.</li>
+      <li>For expedited retrieval, Insert "ss" before the YouTube video URL and press "Enter." E.g., http://y-loader.com/watch?v=u7deClndzQw</li>
+      <li>Seek a more seamless solution? Consider adopting a browser add-on, enabling single-click video downloads.</li>
+    </ol>
+  </div>
+  <div class="legal-section">
+    <h3>Legal Advisory:</h3>
+    <p>
+      Recognizing the importance of downloading videos, photos, and GIFs for personal enjoyment is key. It is crucial to adhere to copyright and intellectual property regulations.
+      Please ensure that downloads are for personal use only and avoid any unauthorized sharing or distribution.<br><br>
+      At Y-Loader.com, our commitment lies in offering a comprehensive solution for downloading videos, photos, and GIFs. Our aim is to enable you to enjoy your preferred digital content
+      whenever you desire, even when lacking an internet connection. Explore our user-friendly Downloader tool now and effortlessly curate your offline collection, enriching your personal experience.
+    </p>
+    <h3>Disclaimer:</h3>
+    <p>
+      Y-Loader.com functions independently and is not affiliated with specific social media or video hosting platforms. Our services are tailored to fulfill the distinct downloading needs
+      of our users. Users are accountable for adhering to the terms, conditions, and copyright regulations set by the platforms they utilize to obtain content.
+    </p>
+  </div>
+  <footer>
+    © 2024 Y-Loader made with <i class="fas fa-heart"></i> by Y-Loader.
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
