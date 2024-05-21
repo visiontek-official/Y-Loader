@@ -1,5 +1,7 @@
 ﻿![alt text](image.png)
 
+![alt text](image-1.png)
+
 # YouTube Video Downloader
 
 Welcome to the YouTube Video Downloader! This intuitive and free tool allows you to effortlessly download your favorite YouTube videos and music with just one click. Designed for a smooth and hassle-free experience, this downloader supports multiple formats and resolutions to meet your needs.
@@ -60,7 +62,7 @@ We welcome contributions! Please fork the repository and create a pull request w
 
 ### 📜 License
 
-This project is licensed under the MIT License. See the [LICENSE](https://chatgpt.com/c/LICENSE)file for more details.
+This project is licensed under the MIT License. See the [LICENSE](https://chatgpt.com/c/LICENSE) file for more details.
 
 ### 🛠️ Support
 
