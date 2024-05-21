@@ -37,16 +37,16 @@ If you are using HTTPS, place your SSL certificates in the appropriate location 
 
    ```bash
    const sslOptions = {
-  key: fs.readFileSync('path/to/privkey.pem'),
-  cert: fs.readFileSync('path/to/fullchain.pem')
-};
+   key: fs.readFileSync('path/to/privkey.pem'),
+   cert: fs.readFileSync('path/to/fullchain.pem')
+   };
 
 4. **Run the Server**
 
    ```bash
    node server.js
 
-   ### 🛠️ Usage
+### 🛠️ Usage
 
 1.	Open Your Browser: Navigate to http://localhost:3000 or https://localhost if using HTTPS.
 2.	Enter YouTube URL: Paste the YouTube video URL into the input field.
@@ -54,14 +54,14 @@ If you are using HTTPS, place your SSL certificates in the appropriate location 
 4.	Select Format: Choose the desired format and quality from the dropdown menu.
 5.	Download: Click the Download button to start the download process. The file will be saved to your device automatically.
 
-   ### 🤝 Contributing
+### 🤝 Contributing
 
 We welcome contributions! Please fork the repository and create a pull request with your improvements.
 
-   ### 📜 License
+### 📜 License
 
 This project is licensed under the MIT License. See the [LICENSE](https://chatgpt.com/c/LICENSE)file for more details.
 
-   ### 🛠️ Support
+### 🛠️ Support
 
 If you encounter any issues or have questions, please open an issue on GitHub.
