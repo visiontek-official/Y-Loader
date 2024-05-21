@@ -35,14 +35,13 @@ Welcome to the YouTube Video Downloader! This intuitive and free tool allows you
 3. **Configure SSL Certificates**
 If you are using HTTPS, place your SSL certificates in the appropriate location and update the paths in server.js:
 
-javascript
    ```bash
    const sslOptions = {
   key: fs.readFileSync('path/to/privkey.pem'),
   cert: fs.readFileSync('path/to/fullchain.pem')
 };
 
-3. **Run the Server**
+4. **Run the Server**
 
    ```bash
    node server.js
