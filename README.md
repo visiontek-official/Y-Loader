@@ -1,4 +1,4 @@
-![alt text](image.png)
+﻿![alt text](image.png)
 
 # YouTube Video Downloader
 
@@ -26,35 +26,43 @@ Welcome to the YouTube Video Downloader! This intuitive and free tool allows you
    ```bash
    git clone https://github.com/visiontek-official/Y-Loader.git
    cd youtube-video-downloader
-Install Dependencies
 
-bash
-npm install
-Configure SSL Certificates
+2. **Install Dependencies**
 
+   ```bash
+   npm install
+
+3. **Configure SSL Certificates**
 If you are using HTTPS, place your SSL certificates in the appropriate location and update the paths in server.js:
 
 javascript
-Copy code
-const sslOptions = {
+   ```bash
+   const sslOptions = {
   key: fs.readFileSync('path/to/privkey.pem'),
   cert: fs.readFileSync('path/to/fullchain.pem')
 };
-Run the Server
 
-bash
-node server.js
-Usage
-Open Your Browser: Navigate to http://localhost:3000 or https://localhost if using HTTPS.
-Enter YouTube URL: Paste the YouTube video URL into the input field.
-Fetch Video Info: Click the Fetch button to retrieve video details.
-Select Format: Choose the desired format and quality from the dropdown menu.
-Download: Click the Download button to start the download process. The file will be saved to your device automatically.
-Contributing
+3. **Run the Server**
+
+   ```bash
+   node server.js
+
+   ### 🛠️ Usage
+
+1.	Open Your Browser: Navigate to http://localhost:3000 or https://localhost if using HTTPS.
+2.	Enter YouTube URL: Paste the YouTube video URL into the input field.
+3.	Fetch Video Info: Click the Fetch button to retrieve video details.
+4.	Select Format: Choose the desired format and quality from the dropdown menu.
+5.	Download: Click the Download button to start the download process. The file will be saved to your device automatically.
+
+   ### 🤝 Contributing
+
 We welcome contributions! Please fork the repository and create a pull request with your improvements.
 
-License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+   ### 📜 License
 
-Support
+This project is licensed under the MIT License. See the [LICENSE](https://chatgpt.com/c/LICENSE)file for more details.
+
+   ### 🛠️ Support
+
 If you encounter any issues or have questions, please open an issue on GitHub.
