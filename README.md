@@ -66,4 +66,4 @@ This project is licensed under the MIT License. See the [LICENSE](https://chatgp
 
 ### 🛠️ Support
 
-If you encounter any issues or have questions, please open an issue on GitHub.2
+If you encounter any issues or have questions, please open an issue on GitHub.
