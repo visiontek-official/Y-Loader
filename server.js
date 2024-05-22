@@ -378,8 +378,8 @@ http.createServer(app).listen(PORT, () => {
 
 // Load SSL certificates
 const sslOptions = {
-    key: fs.readFileSync('C:/Users/Kobus/.vscode/repo/Y-Loader/config/ssl certificates/privkey.pem'),
-    cert: fs.readFileSync('C:/Users/Kobus/.vscode/repo/Y-Loader/config/ssl certificates/fullchain.pem')
+    key: fs.readFileSync(path.join(__dirname, 'config/ssl certificates/privkey.pem')),
+    cert: fs.readFileSync(path.join(__dirname, 'config/ssl certificates/fullchain.pem'))
 };
 
 // Create HTTPS server
