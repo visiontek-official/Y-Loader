@@ -1,4 +1,4 @@
-// Version 1.0.6
+// Version 1.0.7
 const express = require('express');
 const path = require('path');
 const ytdl = require('ytdl-core');
@@ -12,8 +12,8 @@ const useragent = require('express-useragent');
 const app = express();
 const detectPort = require('detect-port');
 
-const PORT = 8443; // Default HTTP port
-const SSL_PORT = 8445; // Default HTTPS port
+const PORT = 3000; // Default HTTP port
+const SSL_PORT = 443; // Default HTTPS port
 
 // Debugging mode flag
 const debugMode = false; // Set to true to enable debugging, false to disable
