@@ -1,5 +1,5 @@
 {
-  "name": "youtube-downloader",
+  "name": "Y-Loader",
   "version": "1.0.0",
   "description": "A simple YouTube video downloader web application.",
   "main": "server.js",
@@ -14,6 +14,7 @@
     "node-macaddress": "^0.2.4",
     "progress": "^2.0.3",
     "socket.io": "^4.7.5",
-    "ytdl-core": "^4.9.1"
+    "ytdl-core": "^4.9.1",
+    "detect-port": "^1.6.1"
   }
 }
