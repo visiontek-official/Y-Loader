@@ -16,7 +16,7 @@ const PORT = 3000; // Default HTTP port
 const SSL_PORT = 443; // Default HTTPS port
 
 // Debugging mode flag
-const debugMode = false; // Set to true to enable debugging, false to disable
+const debugMode = true; // Set to true to enable debugging, false to disable
 
 // Enable or disable conversion flag
 const enableConversion = true; // Set to true to enable conversion, false to disable
